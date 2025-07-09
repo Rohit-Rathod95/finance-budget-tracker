@@ -1,0 +1,72 @@
+.transaction-list {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.transaction-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 8px 0;
+  border-left: 5px solid;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.transaction-list li.income {
+  border-color: #2ecc71;
+}
+
+.transaction-list li.expense {
+  border-color: #e74c3c;
+}
+
+.transaction-list button {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.no-transactions {
+  color: #aaa;
+  font-style: italic;
+}
+.transaction-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-buttons button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #bdc3c7;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button.active {
+  background-color: #3498db;
+}
+
+.filter-buttons button:hover {
+  background-color: #2980b9;
+}
